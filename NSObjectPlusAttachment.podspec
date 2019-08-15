@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
+  Add a attachment attribute to NSObject, so that you can add any addtional with with any NSObject's subclass.
                        DESC
 
   s.homepage         = 'https://github.com/Fykec/NSObjectPlusAttachment'
