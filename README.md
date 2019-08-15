@@ -2,6 +2,16 @@
 
 添加一个  attachment 属性到 NSObject, 这样你就可以为任意一个NSObject 子类添加附带的数据了，特别是针对需要异步传数据的情况，很方便。
 
+
+## 定义
+
+```
+@interface NSObject (Attachment)
+
+@property (nonatomic, strong) id attachment;
+
+@end
+```
 ## 用法
 
 ### 为系统类UIButton，添加附带数据
