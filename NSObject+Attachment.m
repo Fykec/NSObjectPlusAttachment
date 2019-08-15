@@ -13,7 +13,6 @@ static NSString *const kAttachmentKey = @"Attachment";
 
 - (void)setAttachment:(id)attachment
 {
-
     objc_setAssociatedObject(self, (__bridge const void *)(kAttachmentKey), attachment, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 

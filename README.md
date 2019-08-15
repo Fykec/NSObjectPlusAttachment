@@ -32,3 +32,7 @@ button.attachment = <your data>;
 	//
 }
 ```
+
+## 注意
+
+attachment 的settter 和 getter 不是线程安全的，多线程问题，需要在调用的处理。
