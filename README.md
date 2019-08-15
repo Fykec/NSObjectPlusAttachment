@@ -1,22 +1,24 @@
 # NSObject+Attachment
 
-Add a attachment attribute to NSObject, so that you can add any addtional with with any NSObject's subclass.
+添加一个  attachment 属性到 NSObject, 这样你就可以为任意一个NSObject 子类添加附带的数据了，特别是针对需要异步传数据的情况，很方便。
 
-## Usage
+## 用法
 
 ### 为系统类UIButton，添加附带数据
+
 ```
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setBackgroundColor:[UIColor clearColor]];
-    button.attachment = faceID;
-	[button addTarget:self action:@selector(handleTap:) forControlEvents:UIControlEventTouchUpInside];
+UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+[button setBackgroundColor:[UIColor clearColor]];
+button.attachment = faceID;
+[button addTarget:self action:@selector(handleTap:) forControlEvents:UIControlEventTouchUpInside];
 ```
 
 ### 点击事件发生时，获取数据
+
 ```
-	- (void)handleTap:(id)sender {
-	    UIButton *button = (UIButton*)sender;
-		NSString *faceID = button.attachment;
-		//
-	}
+- (void)handleTap:(id)sender {
+	UIButton *button = (UIButton*)sender;
+	NSString *faceID = button.attachment;
+	//
+}
 ```
