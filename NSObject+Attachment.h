@@ -9,6 +9,6 @@
 
 @interface NSObject (Attachment)
 
-@property (nonatomic, strong) id attachment;
+@property (atomic, strong) id attachment;
 
 @end
