@@ -19,7 +19,7 @@
 ```
 UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
 [button setBackgroundColor:[UIColor clearColor]];
-button.attachment = faceID;
+button.attachment = <your data>;
 [button addTarget:self action:@selector(handleTap:) forControlEvents:UIControlEventTouchUpInside];
 ```
 
@@ -28,7 +28,7 @@ button.attachment = faceID;
 ```
 - (void)handleTap:(id)sender {
 	UIButton *button = (UIButton*)sender;
-	NSString *faceID = button.attachment;
+	id <your data> = button.attachment;
 	//
 }
 ```
